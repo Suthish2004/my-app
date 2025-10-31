@@ -41,7 +41,7 @@ Return ONLY valid JSON in this exact format, no additional text:
 }`;
 
     // Call Gemini API
-    const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
+    const model = genAI.getGenerativeModel({ model: "gemini-1.0-pro" });
     const result = await model.generateContent(prompt);
     const response = await result.response;
     let text = response.text();
